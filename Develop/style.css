@@ -1,60 +1,127 @@
-
+/* Body styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
 
+/* Container styles */
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-form {
+/* Header styles */
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Form styles */
+#search-form {
     margin-bottom: 20px;
 }
 
-input[type="text"] {
+#city-input {
     padding: 8px;
-    width: 200px;
+    width: calc(100% - 100px);
     font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-button {
+#search-form button {
     padding: 8px 15px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
 }
 
-#current-weather, #forecast, #search-history {
+#search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Current weather styles */
+#current-weather {
     margin-bottom: 20px;
 }
 
-#current-weather h2, #forecast h2, #search-history h2 {
+#current-weather h2 {
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
-#forecast div {
+#current-weather p {
+    margin: 5px 0;
+}
+
+/* Forecast styles */
+#forecast {
+    margin-bottom: 20px;
+}
+
+#forecast h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#forecast .forecast-item {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-#forecast img {
+#forecast .forecast-item p {
+    margin: 5px 0;
+}
+
+#forecast .forecast-item img {
     vertical-align: middle;
     margin-left: 10px;
 }
 
-#search-history p {
-    margin: 5px 0;
+#search-history {
+    margin-bottom: 20px;
 }
 
-#search-history a {
-    text-decoration: none;
-    color: blue;
+#search-history h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
-#search-history a:hover {
-    text-decoration: underline;
+#search-history .search-history-item {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#search-history .search-history-item button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-history .search-history-item button:hover {
+    background-color: #0056b3;
 }
