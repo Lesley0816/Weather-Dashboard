@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 200px;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#current-weather, #forecast, #search-history {
+    margin-bottom: 20px;
+}
+
+#current-weather h2, #forecast h2, #search-history h2 {
+    margin-bottom: 10px;
+}
+
+#forecast div {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#forecast img {
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+#search-history p {
+    margin: 5px 0;
+}
+
+#search-history a {
+    text-decoration: none;
+    color: blue;
+}
+
+#search-history a:hover {
+    text-decoration: underline;
+}
