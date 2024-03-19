@@ -26,7 +26,7 @@ function getWeather(city) {
 }
 
 function getForecast(lat, lon) {
-    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`)
         .then(response => response.json())
         .then(data => displayForecast(data.daily))
         .catch(error => console.error('Error fetching forecast:', error));
